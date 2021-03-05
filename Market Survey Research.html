@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Market survey research</title>
+    <style>
+        .title {
+            line-height: 9px;
+        }
+        .content {
+            margin-top: 20px;;
+            margin-left: -40px;
+            }
+        .question {
+            font-weight: bold;
+            line-height: 9px;
+        }
+        .table1 {
+            list-style-type: none;
+            margin-left: -30px;
+        }
+        .table {
+            width: 90%;
+            height: 200px;
+            list-style-type: none;
+
+        }
+        .column1 {
+            width: 30%;
+        }
+        .column2 {
+            width: 15%;
+            text-align: center;
+        }
+        .tabletitle {
+            width: 15%;
+            text-align: center;
+        }
+        .row1 {
+            background: lightgray;
+            height: 25%;
+        }
+        .row3 {
+            background: lightgray;
+            height: 25%;
+        }
+        .row2 {
+            height: 25%;
+        }
+        .row4 {
+            height: 25%;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="title">
+            <h2> Market Research Survey</h2>
+            <p> Please take a few moments to complete this satisfaction survey. </p>
+        </div>
+        <div>
+            <ul class="content" style="list-style-type: none">
+                <li>
+                    <p class="question"> What is your age range?</p>
+                    <select name="Age" style="height: 20px;width: 400px" >
+                        <option value="18-24"> 18-24 </option>
+                        <option value="25-34"> 25-34 </option>
+                        <option value="35-50"> 35-50 </option>
+                        <option value="50+"> 50+ </option>
+                    </select>
+                </li>
+                <li>
+                    <p class="question"> What is your yearly income range?</p>
+                    <select name="Income" style="height: 20px;width: 400px" >
+                        <option value="0-25000"> $0-$25000 </option>
+                        <option value="25001-50000"> $25001-$50000 </option>
+                        <option value="50001-100000"> $50001-$100000 </option>
+                        <option value="100000+"> $100000+ </option>
+                    </select>
+                </li>
+                <li>
+                    <ul style="list-style-type: none; margin-left: -40px">
+                        <p class="question"> Gender Identity</p>
+                        <li><input type="radio" name="gender" value="Male"> Male </li>
+                        <li><input type="radio" name="gender" value="Fmale"> Female </li>
+                        <li><input type="radio" name="gender" value="NoBi"> NonBinary </li>
+                        <li><input type="radio" name="gender" value="Other"> Other </li>
+                        <li> <input type="text" name="gender" style="margin-left: 25px"> </li>
+                    </ul>
+                <li>
+                    <ul style="list-style-type: none; margin-left: -40px">
+                        <p class="question"> Which of the following products have your purchased in the last 2 months. Please check all that apply.</p>
+                        <li><input type="checkbox" name="LastProduct" value="Product1"> Product 1 </li>
+                        <li><input type="checkbox" name="LastProduct" value="Product2"> Product 2 </li>
+                        <li><input type="checkbox" name="LastProduct" value="Product3"> Product 3 </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul style="list-style-type: none; margin-left: -40px">
+                        <p class="question"> How often would you use our new product?</p>
+                        <li><input type="radio" name="Frequency" value="Daily"> Daily </li>
+                        <li><input type="radio" name="Frequency" value="Weekly"> Weekly</li>
+                        <li><input type="radio" name="Frequency" value="Monthly"> Monthly</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul style="list-style-type: none; margin-left: -40px">
+                        <p class="question"> What would you pay for the new product?</p>
+                        <table>
+                            <tr>
+                                <td style="margin-left: 10px">$</td>
+                                <td> <input type="text" name="Price$" style="width: 70px"></td>
+                                <td> <input type="text" name="PriceC" style="width: 10px"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td> Dollars</td>
+                                <td> Cents</td>
+                            </tr>
+                        </table>
+                    </ul>
+                </li>
+                <li>
+                    <p class="question">What features would you like to see in the new product.</p>
+                    <textarea style="width: 100%; height: 120px"> </textarea>
+                </li>
+                <li>
+                    <p class="question">Please rate your level of agreement with the following statements.</p>
+                    <table class="table" border="1">
+                        <tr class="row1">
+                            <th class="column1"></th>
+                            <th class="tabletitle">Strongly Disagree</th>
+                            <th class="tabletitle">Disagree</th>
+                            <th class="tabletitle">Agree</th>
+                            <th class="tabletitle">Strongly Agree</th>
+                        </tr>
+                        <tr class="row2">
+                            <td class="column1"> Our products are priced fairly.</td>
+                            <td class="column2">
+                                <ul class="table1">
+                                    <li> <input type="radio" name="Price-Fairly" value="1"></li>
+                                    <li>1</li>
+                                </ul>
+                            </td>
+                            <td class="column2">
+                                <ul class="table1">
+                                <li> <input type="radio" name="Price-Fairly" value="2"></li>
+                                <li>2</li>
+                                </ul>
+                            </td>
+                            <td class="column2">
+                                <ul class="table1">
+                                    <li> <input type="radio" name="Price-Fairly" value="3"></li>
+                                    <li>3</li>
+                                </ul>
+                            </td>
+                            <td class="column2">
+                                <ul class="table1">
+                                    <li> <input type="radio" name="Price-Fairly" value="4"></li>
+                                    <li>4</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="row3">
+                            <td class="column1"> Our products are high quality.</td>
+                            <td class="column2">
+                                <ul class="table1">
+                                    <li> <input type="radio" name="High-Quality" value="1"></li>
+                                    <li>1</li>
+                                </ul>
+                            </td>
+                            <td class="column2">
+                                <ul class="table1">
+                                    <li> <input type="radio" name="High-Quality" value="2"></li>
+                                    <li>2</li>
+                                </ul>
+                            </td>
+                            <td class="column2">
+                                <ul class="table1">
+                                    <li> <input type="radio" name="High-Quality" value="3"></li>
+                                    <li>3</li>
+                                </ul>
+                            </td>
+                            <td class="column2">
+                                <ul class="table1">
+                                    <li> <input type="radio" name="High-Quality" value="4"></li>
+                                    <li>4</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="row4">
+                            <td class="column1"> You would recommend our product to a friend or coworker.</td>
+                            <td class="column2">
+                                <ul class="table1">
+                                    <li> <input type="radio" name="Recommend" value="1"></li>
+                                    <li>1</li>
+                                </ul>
+                            </td>
+                            <td class="column2">
+                                <ul class="table1">
+                                    <li> <input type="radio" name="Recommend" value="2"></li>
+                                    <li>2</li>
+                                </ul>
+                            </td>
+                            <td class="column2">
+                                <ul class="table1">
+                                    <li> <input type="radio" name="Recommend" value="3"></li>
+                                    <li>3</li>
+                                </ul>
+                            </td>
+                            <td class="column2">
+                                <ul class="table1">
+                                    <li> <input type="radio" name="Recommend" value="4"></li>
+                                    <li>4</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <br>
+                <input type="submit" name="Submit">
+            </ul>
+        </div>
+    </form>
+</body>
+</html>
